@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+	display: grid;
+	height: 868px;
+	grid-template-columns: 335px repeat(5, 250px) 335px;
+	grid-template-rows: 53px 222px 186px 223px 137px 116px;
+}
+
+.mountain-back {
+	grid-area: 1/1/4/8;
+	z-index: -1;
+	background-image: url("pictures/mountain.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	padding-top: 85px;
+}
+
+.my-tour {
+	grid-area: 1/1/2/4;
+	background: linear-gradient(rgb(54, 97, 138), rgb(34, 66, 94));
+	box-shadow: 0 6px 4px -4px rgba(32, 32, 32, 0.5);
+	text-align: center;
+}
+
+.awesome-text {
+	line-height: 53px;
+	font-family: Trattatello, fantasy;
+	font-style: italic;
+	font-stretch: expanded;
+	font-size: 36px;
+	color: white;
+}
+
+.text-semi {
+	font-family: Arial, sans-serif;
+	font-size: 36px;
+	color: white;
+}
+
+.text-large {
+	font-family: Arial, sans-serif;
+	font-size: 60px;
+	color: white;
+	 transition: all 0.5s; 
+}
+
+hr {
+	padding-bottom: 1px;
+	background-color: #9b9b9b;
+	border-bottom: 1px solid #F4F4F4;
+	opacity: 0.5;
+}
+
+.text-small {
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+}
+
+.call-us {
+	grid-area: 1/4/2/8;
+    background: linear-gradient(rgb(54, 97, 138), rgb(34, 66, 94));
+	box-shadow: 0 6px 4px -4px rgba(32, 32, 32, 0.5);
+	padding-top: 5px;
+	padding-left: 25%;
+}
+
+.number-block {
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+}
+
+.number {
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	color: white;
+}
+
+.simple-text {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: rgba(250, 250, 250, .6);
+}
+
+.button-block {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	vertical-align: top;
+}
+
+.my-button {
+	width: 200px;
+	padding: 10px 0;
+	background: linear-gradient(rgb(170, 225, 50), rgb(79, 188, 23));
+	border-radius: 7px;
+	box-shadow: 0 0 20px rgba(32, 32, 32, 0.5);
+	outline: none;
+}
+
+.my-button:active {
+	background: linear-gradient(rgb(120, 175, 0), rgb(29, 138, 0));
+	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.semi-text {
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+.empty-left {
+	grid-area: 3/1/4/2;
+}
+
+.price {
+	grid-area: 3/2/4/3;
+}
+
+.text-block {
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 90%;
+	height: 80%;
+	border: 1px solid rgba(250, 250, 250, 0);
+	border-bottom: none;
+	border-radius: 5px;
+	background: linear-gradient(rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0));
+	margin: 35px auto 0 auto;
+	text-align: center;
+}
+
+.yellow-logo {
+	width: 32%;
+	margin: -37px 0 0 0;
+}
+
+.alligator {
+	width: 50%;
+	margin: -37px 0 0 5px;
+}
+
+.title {
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.content {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: black;
+}
+
+.visa {
+	grid-area: 3/3/4/4;
+}
+
+.hotel {
+	grid-area: 3/4/4/5;
+}
+
+.program {
+	grid-area: 3/5/4/6;
+}
+
+.culture {
+	grid-area: 3/6/4/7;
+}
+
+.empty-right {
+	grid-area: 3/7/4/8;
+}
+
+.form {
+	grid-area: 4/1/5/8;
+	background: linear-gradient(rgb(34, 168, 196), rgb(23, 128, 168));
+	box-shadow: 0 0 20px rgba(32, 32, 32, 0.5);
+	text-align: center;
+	padding-top: 10px;
+}
+
+legend {
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	color: black;
+	margin-bottom: 5px;
+}
+
+.input-contaiter {
+	width: 600px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.field {
+	display: inline-block;
+	height: 40px;
+	width: 250px;
+	margin: 5px;
+	border: .5px solid rgb(122, 122, 122);
+	border-radius: 5px;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: rgb(78, 77, 77);
+	padding-left: 10px;
+	box-shadow: inset 1px 1px 1px rgba(122, 122, 122, 0.911);
+}
+
+.btn {
+	height: 40px;
+	width: 200px;
+	margin: 10px;
+	border-radius: 8px;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	padding: 8px;
+	background: linear-gradient(rgb(170, 225, 50), rgb(79, 188, 23));
+	box-shadow: 0 0 20px rgba(32, 32, 32, 0.5);
+	outline: none;
+}
+
+.btn:active {
+	background: linear-gradient(rgb(120, 175, 0), rgb(29, 138, 0));
+	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.deepsea-back {
+	grid-area: 5/1/7/8;
+	z-index: -1;
+	background-image: url("pictures/deep_sea.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	padding-top: 17px;
+}
+
+.steps {
+	grid-area: 6/1/7/8;
+}
+
+.step-container {
+	width: 65%;
+	height: 100%;
+	margin: 0 auto;
+	border: 1px solid rgba(250, 250, 250, 0);
+	border-bottom: none;
+	border-radius: 15px;
+	background-color: rgba(250, 241, 156, 0.4);
+}
+
+.empty-str {
+	font-size: 10px;
+}
+
+.section {
+	display: inline-block;
+	width: 310px;
+	height: 100%;
+	vertical-align: top;
+}
+
+.section-description {
+	display: inline-block;
+	width: 210px;
+	height: 100%;
+	vertical-align: top;
+	text-align: center;
+}
+
+.circle {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: linear-gradient(rgb(170, 225, 50), rgb(79, 188, 23));
+	font-size: 50px;
+	font-family: Arial, sans-serif;
+	color: white;
+	text-align: center;
+	margin-top: 18px;
+	margin-left: 20px;
+	line-height: 80px;
+}
+
+.description {
+	display: inline;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+	color: white;
+}
+
+.pad1 {
+	padding-left: 10px;
+	padding-top: 44px;
+}
+
+.pad2 {
+	padding-left: 10px;
+	padding-top: 32px;
+}
+
+.pad3 {
+	padding-left: 10px;
+	padding-top: 44px;
+}
+
+.pad4 {
+	padding-left: 10px;
+	padding-top: 23px;
+}
+
+.green {
+	color: rgb(173, 228, 88);
+}
+
+.blue {
+	color: rgb(150, 250, 229);
+}
+
+.peach {
+	color: rgb(213, 132, 23);
+}

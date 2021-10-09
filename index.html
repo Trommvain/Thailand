@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="main.css">
+	<title>Тайланд</title>
+</head>
+<body>
+
+	<div class="grid-container">
+		<div class="mountain-back">
+			<p class="text-semi">Горячее предложение</p>
+			<p class="text-large">в Таиланд за полцены!</p>
+			<hr style="width:35%; margin: 10px auto;">
+			<p class="text-small blue">10-дневный тур в Паттайю по цене 5-дневного</p>
+		</div>
+		<div class="my-tour">
+			<p class="awesome-text">Мой<span class="awesome-text green">Тур</span></p>
+		</div>
+		<div class="call-us">
+			<div class="number-block">
+				<p class="number">8 800 <span class="number green">555 77 77</span> </p>
+				<p class="simple-text">звонок по России бесплатный</p>
+			</div>
+			<div class="button-block">
+				<button class="my-button"><p class="semi-text">Заказать звонок</p></button>
+			</div>
+		</div>
+		<div class="empty-left"></div>
+		<div class="price">
+			<div class="text-block">
+				<img class="yellow-logo" src="logo/piggy.png" alt="">
+				<p class="title">Выгодная <br> цена</p>
+				<p class="content">Стоимость тура всего 855$, включая стоимость перелета</p>
+			</div>
+		</div>
+		<div class="visa">
+			<div class="text-block">
+				<img class="yellow-logo" src="logo/visa.png" alt="">
+				<p class="title">Виза по прибытию</p>
+				<p class="content">Никаких проблем с оформлением и получением визы</p>
+			</div>
+		</div>
+		<div class="hotel">
+			<div class="text-block">
+				<img class="yellow-logo" src="logo/hotel.png" alt="">
+				<p class="title">Комфортный отдых</p>
+				<p class="content">Уютный номер в отеле 4*, завтраки включены</p>
+			</div>
+		</div>
+		<div class="program">
+			<div class="text-block">
+				<img class="yellow-logo alligator" src="logo/alligator.png" alt="">
+				<p class="title">Насыщенная программа</p>
+				<p class="content">Экскурсии по Паттайе, посещение крокодиловой фермы и др.</p>
+			</div>
+		</div>
+		<div class="culture">
+			<div class="text-block">
+				<img class="yellow-logo" src="logo/bouquet.png" alt="">
+				<p class="title">Восточная культура</p>
+				<p class="content">Древние храмы, тропические сады и традиции Востока</p>
+			</div>
+		</div>
+		<div class="empty-right"></div>
+		<div class="form">
+			<fieldset>
+				<legend>Заполните форму, чтобы получить самое выгодное предложение</legend>
+				<div class="input-contaiter">
+					<form method="LINK" action="submit.html">
+					<input class="field" type="text" name="username" placeholder="Как Вас зовут?*" required>
+					<input class="field" name="date" type="text" onfocus="(this.type='date')"
+					 onblur="if(!this.value)this.type='text'" placeholder="Когда летим?*" required>
+					<input class="field" type="tel" name="phone" placeholder="Ваш телефон*" required>
+					<input class="field" type="number" name="people" placeholder="Сколько человек?*" required>
+				</div>
+				<input class="btn" type="submit" name="submit" value="Подобрать тур">
+					</form>
+			  </fieldset>
+		</div>
+		<div class="deepsea-back">
+			<p class="text-semi">Таиланд - это просто!</p>
+			<p class="empty-str">&nbsp;</p>
+			<p class="text-small peach">Всего 4 шага и Вы наслаждаетесь солнечными
+				побережьями <br> страны тысячи улыбок!</p>
+		</div>
+		<div class="steps">
+			<div class="step-container">
+				<div class="section">
+					<div class="circle">1</div>
+						<div class="section-description pad1">
+							<p class="description">Заполните форму</p>
+						</div>
+				</div>
+				<div class="section">
+					<div class="circle">2</div>
+						<div class="section-description pad2">
+							<p class="description">Получите наше предложение</p>
+						</div>
+				</div>
+				<div class="section">	
+					<div class="circle">3</div>
+						<div class="section-description pad3">
+							<p class="description">Забронируйте тур</p>
+						</div>
+				</div>
+				<div class="section">
+					<div class="circle">4</div>
+						<div class="section-description pad4">
+							<p class="description">Приготовьтесь к великолепному отдыху</p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+
+<script>
+	
+	let flick = setInterval(colorFlicker, 750);
+
+	let flag = true;
+
+	function colorFlicker() {
+	let elem = document.getElementsByClassName('text-large')[0];
+    elem.style.color = flag ? 'red' : 'white';
+    flag = !flag;
+}
+
+  </script>
+
+</html>
